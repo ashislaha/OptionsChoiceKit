@@ -77,3 +77,23 @@ extension OptionsChoiceViewController: UICollectionViewDelegate {
 		// add apply and cancel button at navigation bar
 	}
 }
+
+extension OptionsChoiceViewController: UICollectionViewDelegateFlowLayout {
+	
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+		return CGSize(width: view.bounds.width, height: 44)
+	}
+	
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+		
+		// here we should return the correct CGSize based on cell's label content
+		return CGSize(width: 100, height: 100)
+	}
+	
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+		return 8
+	}
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+		return 8
+	}
+}

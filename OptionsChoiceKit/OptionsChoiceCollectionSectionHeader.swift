@@ -21,7 +21,7 @@ public class OptionsChoiceCollectionSectionHeader: UICollectionReusableView {
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.numberOfLines = 0
 		label.font = UIFont.preferredFont(forTextStyle: .body)
-		label.textAlignment = .center
+		label.textAlignment = .left
 		return label
 	}()
 	
