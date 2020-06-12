@@ -11,14 +11,14 @@ import OptionsChoiceKit
 
 class ConsumerOneViewController: UIViewController, OptionsChoiceViewControllerDataSource {
 
-	var sectionsDataSource: [OptionSectionDataSource] = [
+	var sectionsDataSource: [OptionSectionInformation] = [
 		
-		OptionSectionDataSource(sectionTitle: "consumer1-section-1", cells: [
+		OptionSectionInformation(sectionTitle: "consumer1-section-1", cells: [
 			OptionCellInformation(name: "consumer-1-1", backgroundColor: .red),
 			OptionCellInformation(name: "consumer-1-2", backgroundColor: .green),
 			OptionCellInformation(name: "consumer-1-3", backgroundColor: .yellow)
 		]),
-		OptionSectionDataSource(sectionTitle: "consumer1-section-2", cells: [
+		OptionSectionInformation(sectionTitle: "consumer1-section-2", cells: [
 			OptionCellInformation(name: "consumer-2-1", backgroundColor: .purple),
 			OptionCellInformation(name: "consumer-2-2", backgroundColor: .red),
 			OptionCellInformation(name: "consumer-2-3", backgroundColor: .orange),

@@ -20,7 +20,7 @@ public struct OptionCellInformation {
 	}
 }
 
-public struct OptionSectionDataSource {
+public struct OptionSectionInformation {
 	public let sectionTitle: String
 	public let cells: [OptionCellInformation]
 	
@@ -31,7 +31,7 @@ public struct OptionSectionDataSource {
 }
 
 public protocol OptionsChoiceViewControllerDataSource: class {
-	var sectionsDataSource: [OptionSectionDataSource] {get set}
+	var sectionsDataSource: [OptionSectionInformation] {get set}
 }
 
 
@@ -39,9 +39,9 @@ public protocol OptionsChoiceViewControllerDataSource: class {
 
 public struct Option {
 	public var cellInfo: OptionCellInformation
-	public var sectionInfo: OptionSectionDataSource
+	public var sectionInfo: OptionSectionInformation
 	
-	public init(cellInfo: OptionCellInformation, sectionInfo: OptionSectionDataSource) {
+	public init(cellInfo: OptionCellInformation, sectionInfo: OptionSectionInformation) {
 		self.cellInfo = cellInfo
 		self.sectionInfo = sectionInfo
 	}
